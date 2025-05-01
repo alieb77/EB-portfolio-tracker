@@ -24,4 +24,92 @@
         }
         table {
             width: 100%;
-            border-coll
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+        }
+        .profit { color: #27ae60; font-weight: bold; }
+        .loss { color: #e74c3c; font-weight: bold; }
+        .total { font-weight: bold; background-color: #f8f9fa; }
+    </style>
+</head>
+<body>
+    <div class="portfolio-container">
+        <h1>📊 Mon Portefeuille d'Investissement</h1>
+        <p>Dernière mise à jour : <strong>2 juin 2024</strong></p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Actif</th>
+                    <th>Nombre</th>
+                    <th>Prix d'Entrée</th>
+                    <th>Date Entrée</th>
+                    <th>Prix Actuel</th>
+                    <th>Date MAJ</th>
+                    <th>P/L</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Actif 1</td>
+                    <td>1</td>
+                    <td>2410,2</td>
+                    <td>28/09/2024</td>
+                    <td>1836</td>
+                    <td>01/05/2024</td>
+                    <td class="loss">-574,2</td>
+                </tr>
+                <tr>
+                    <td>Actif 2</td>
+                    <td>2,7</td>
+                    <td>405,2</td>
+                    <td>03/05/2024</td>
+                    <td>425</td>
+                    <td>01/05/2024</td>
+                    <td class="profit">+53,46</td>
+                </tr>
+                <tr>
+                    <td>Actif 3</td>
+                    <td>4</td>
+                    <td>184,5</td>
+                    <td>03/05/2024</td>
+                    <td>213</td>
+                    <td>01/05/2024</td>
+                    <td class="profit">+114</td>
+                </tr>
+                <tr>
+                    <td>Actif 4</td>
+                    <td>10</td>
+                    <td>135</td>
+                    <td>09/08/2024</td>
+                    <td>97</td>
+                    <td>01/05/2024</td>
+                    <td class="loss">-380</td>
+                </tr>
+                <tr>
+                    <td>Actif 5</td>
+                    <td>7</td>
+                    <td>489,7</td>
+                    <td>02/08/2024</td>
+                    <td>572</td>
+                    <td>01/05/2024</td>
+                    <td class="profit">+576,1</td>
+                </tr>
+                <tr class="total">
+                    <td colspan="6">Total P/L</td>
+                    <td class="profit">+210,64</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
