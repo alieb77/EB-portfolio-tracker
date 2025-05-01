@@ -50,6 +50,34 @@
 </style>
 </head>
 <body>
+    <div class="portfolio-container">
+        <h1>📊 Portfolio Tracker - Ali El Boukhari</h1>
+        <p>Dernière mise à jour : <span id="date">...</span></p>
+        
+        <div class="balance" id="balance">$24,500.00</div>
+        
+        <h2>Mes Actifs</h2>
+        <div id="assets">
+            <div class="asset">
+                <span>Bitcoin (BTC)</span>
+                <span class="profit">+12%</span>
+            </div>
+            <div class="asset">
+                <span>Ethereum (ETH)</span>
+                <span class="loss">-3%</span>
+            </div>
+            <div class="asset">
+                <span>Apple (AAPL)</span>
+                <span class="profit">+5%</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Afficher la date actuelle
+        document.getElementById("date").textContent = new Date().toLocaleDateString();
+    </script>
+</body>
     <h1>🚀 Mon Portefeuille d'Investissement</h1>
     <p>Solde en temps réel :</p>
     <div class="balance" id="balance">$10,000.00</div>
