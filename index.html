@@ -4,67 +4,24 @@
     <title>Ali El Boukhari - Portfolio Tracker</title>
     <style>
         body {
-            font-family: 'Roboto', Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f5f5f5;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
+            margin: 0;
             padding: 20px;
-            text-align: center;
+            color: #333;
+        }
+        .portfolio-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h1 {
             color: #2c3e50;
-            margin-bottom: 30px;
+            text-align: center;
         }
-        .portfolio-container {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .balance {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #27ae60;
-            margin: 20px 0;
-        }
-        .asset {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-            border-bottom: 1px solid #eee;
-        }
-        .profit { color: #27ae60; }
-        .loss { color: #e74c3c; }
-    </style>
-</head>
-<body>
-    <div class="portfolio-container">
-        <h1>📊 Portfolio Tracker - Ali El Boukhari</h1>
-        <p>Dernière mise à jour : <span id="date">...</span></p>
-        
-        <div class="balance" id="balance">$24,500.00</div>
-        
-        <h2>Mes Actifs</h2>
-        <div id="assets">
-            <div class="asset">
-                <span>Bitcoin (BTC)</span>
-                <span class="profit">+12%</span>
-            </div>
-            <div class="asset">
-                <span>Ethereum (ETH)</span>
-                <span class="loss">-3%</span>
-            </div>
-            <div class="asset">
-                <span>Apple (AAPL)</span>
-                <span class="profit">+5%</span>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Afficher la date actuelle
-        document.getElementById("date").textContent = new Date().toLocaleDateString();
-    </script>
-</body>
-</html>
+        table {
+            width: 100%;
+            border-coll
